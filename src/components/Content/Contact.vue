@@ -16,7 +16,7 @@ export default {
                     <li><a href="mailto:Joshuacroucher1@gmail.com">Joshuacroucher1@gmail.com</a></li>
                 </ul>
             </span>
-            <span class="w-1/2">
+            <span class="w-1/2 Headshot">
                 <img class="w-52 h-52 float-right" src="../../assets/Headshot.png" alt="Headshot">
             </span>
         </div>
@@ -28,4 +28,5 @@ export default {
 </template>
 
 <style scoped>
+
 </style>

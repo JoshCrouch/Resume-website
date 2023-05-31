@@ -13,8 +13,8 @@ import Thanks from "./components/Content/Thanks.vue"
 
 <template>
   <div>
-    <Navbar class="h-full w-1/6 bg-white fixed"/>
-    <div class="ml-[16.66%] text-white p-10">
+    <Navbar class="h-full w-1/6 bg-white fixed Navbar"/>
+    <div class="text-white p-10 Content">
       <Contact id="Contact" />
       <Cover_Letter id="Cover_Letter" />
       <Education id="Education" />
@@ -42,11 +42,25 @@ body {
   line-height: 1.75rem/* 28px */;
 }
 a:hover {
-  color: rgb(103 232 249 / var(--tw-text-opacity));
+  color: rgb(34 211 238);
 }
 
 a {
   transition: 100ms all ease-in-out;
+  color: rgb(165 243 252);
+}
+
+.Navbar, .Headshot {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1100px) {
+  .Navbar, .Headshot {
+    visibility: visible;
+  }
+  .Content {
+    margin-left: 16.66%;
+  }
 }
 
 </style>
